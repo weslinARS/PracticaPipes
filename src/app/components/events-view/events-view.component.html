@@ -1,0 +1,25 @@
+<div class="overflow-x-auto">
+  <table class="table">
+    <!-- head -->
+    <thead>
+      <tr>
+        <th>Fecha contratacion</th>
+        <th>Fecha evento</th>
+        <th>Hora de evento</th>
+        <th>Duracion evento h</th>
+        <th>organizador</th>
+        <th>Cantidad de personas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let event of data">
+        <td>{{event.fechaContratacion| date }}</td>
+        <td>{{ event.fechaEvento | date : "dd/MM/YY" }}</td>
+        <td>{{event.fechaEvento|date : 'hh:mm'}}</td>
+        <td>{{ event.duracionEvento }}</td>
+        <td>{{event.organizadorEvento}}</td>
+        <td>{{event.cantParticipantesEvento }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

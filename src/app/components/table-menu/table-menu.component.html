@@ -1,0 +1,22 @@
+<div class=" flex items-center justify-center">
+  <div class="">
+    <div class="prose py-2">
+      <h1 class="text-primary  font-bold">Menu de tablas</h1>
+      <p>
+        Navega para visualizar la implementacion de los diferentes pipes para casos especificos 
+      </p>
+    </div>
+    <div class="grid grid-cols-3 grid-rows-2 gap-4">
+      <app-menu-card [title]="'Tabla de eventos'" [route]="'eventos'"
+      [description]="'Formato de fechas (Date)'"
+      ></app-menu-card>
+      <app-menu-card [title]="'Tabla de ingresos'" [route]="'ingresos'"
+      
+      ></app-menu-card>
+      <app-menu-card [title]="'Tabla de Tarjetas de credido'" [route]="'tarjetasCredito'" [description]="'Representando divisas (Currency)'"></app-menu-card>
+      <app-menu-card [title]="'Tabla de pacientes'" [route]="'pacientes'" [description]="'Representando Mayuscula (Uppercase y Lowercase)'"></app-menu-card>
+      <app-menu-card [title]="'Productos'" [route]="'productos'" [description]="'Representando números (Number)'"></app-menu-card>
+      <app-menu-card [title]="'Productos Ordenados'" [route]="'productoOrdenado'" [description]="'Ordenando elementos'"></app-menu-card>
+    </div>
+  </div>
+</div>

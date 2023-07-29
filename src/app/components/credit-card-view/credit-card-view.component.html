@@ -1,0 +1,23 @@
+<div class="overflow-x-auto">
+  <table class="table">
+    <!-- head -->
+    <thead>
+      <tr>
+        <th>Nombre Cliente</th>
+        <th>Num. Tarjeta</th>
+        <th>Fecha Exp.</th>
+        <th>Limite Local</th>
+        <th>Limite Internacional</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let tarjetas of tarjetasArray">
+        <td>{{tarjetas.nombreUsuario}}</td>
+        <td>{{tarjetas.numeroTarjeta}}</td>
+        <td>{{tarjetas.fechaExpiracion | date : "dd/MM/YY"}}</td>
+        <td>{{tarjetas.LimiteMonedaLocal| currency : tarjetas.monedaLocal }}</td>
+        <td>{{tarjetas.LimiteMonedaExtranjera| currency: tarjetas.monedaExtranjera}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

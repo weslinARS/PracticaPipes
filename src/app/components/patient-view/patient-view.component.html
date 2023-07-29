@@ -1,0 +1,27 @@
+<div class="overflow-x-auto">
+  <table class="table">
+    <!-- head -->
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Edad</th>
+        <th>dni</th>
+        <th>Ocupacion</th>
+        <th>Telefono</th>
+        <th>Direccion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let paciente of pacientes">
+        <td>{{paciente.nombre|uppercase}}</td>
+        <td>{{paciente.apellido|lowercase}}</td>
+        <td>{{paciente.edad}}</td>
+        <td>{{paciente.dni}}</td>
+        <td>{{paciente.ocupacion|lowercase}}</td>
+        <td>{{paciente.telefono}}</td>
+        <td>{{paciente.direccion|lowercase}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

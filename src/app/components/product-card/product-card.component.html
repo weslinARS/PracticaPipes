@@ -1,0 +1,14 @@
+<div class="card bg-neutral-900 text-primary-content">
+  <div class="card-body">
+    <div class="flex flex-col gap-1 items-start">
+      <h2 class="card-title">{{ product.nombre }}</h2>
+      <span class="text-yellow-50 text-lg"><span class="font-bold">calificación:</span>  {{product.calificacion|number:'1.1-1'}}</span>
+    </div>
+    <p class="text-2xl font-bold">${{product.precio|number:'3.1-2'}}</p>
+    <p class="text-yellow-500 font-bold text-lg">descuento : {{product.descuento|number:'1.1-2'}}</p>
+    <p class="text-white font-medium">Cantidad: {{product.cantidad|number}}</p>
+    <div class="card-actions justify-end">
+      <button class="btn">Buy Now</button>
+    </div>
+  </div>
+</div>
